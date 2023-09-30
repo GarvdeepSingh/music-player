@@ -154,19 +154,21 @@ header .master-click .wave{
     align-items: flex-end;
     margin-right: 10px;
 }
-header .master-click .wave .wave1{
+header .master-click .active1 .wave .wave1{
     width: 3px;
     height: 10px;
     background: aqua;
     margin-right: 3px;
     border-radius: 10px 10px 0px 0px;
+    animation: wave .5s linear infinite;
 }
-header .master-click .wave .wave1:nth-child(2){
+header .master-click .active1 .wave1:nth-child(2){
     height: 13px;
 }
-header .master-click .wave .wave1:nth-child(3){
+header .master-click .active1 .wave1:nth-child(3){
     height: 8px;
 }
+
 @keyframes wave {
     0%{
         height: 10px;
@@ -178,4 +180,17 @@ header .master-click .wave .wave1:nth-child(3){
         height: 10px;
     }
 }
-
+header .poster-master-play img {
+    width: 35px;
+    height: 35px;
+}
+header .poster-master-play h5{
+    width: 130px;
+    border: 1px solid #fff;
+    margin-left: 15px;
+    color: #fff;
+    line-height: 17px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
